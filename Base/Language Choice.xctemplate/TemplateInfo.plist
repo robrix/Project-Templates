@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.antitypical.dt.unit.languageChoice</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Language:</string>
+			<key>Description</key>
+			<string>Your primary implementation language.</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Default</key>
+			<string>Swift</string>
+			<key>Values</key>
+			<array>
+				<string>Swift</string>
+			</array>
+			<key>Variables</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>ibCustomModuleProvider</key>
+					<string>target</string>
+					<key>moduleNamePrefixForClasses</key>
+					<string>$(PRODUCT_MODULE_NAME).</string>
+				</dict>
+			</dict>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Project</key>
+					<dict>
+						<key>Configurations</key>
+						<dict>
+							<key>Debug</key>
+							<dict>
+								<key>SWIFT_OPTIMIZATION_LEVEL</key>
+								<string>-Onone</string>
+							</dict>
+						</dict>
+					</dict>
+					<key>Definitions</key>
+					<dict>
+						<key>*:imports:importHeader:*</key>
+                        <string/> <!-- no need -->
+						<key>*:imports:importFramework:*</key>
+						<string>import ___*___</string>
+						<key>*:class:*</key>
+                        <string/> <!-- no need -->
+						<key>*:implementation</key>
+						<dict>
+							<key>Beginning</key>
+							<string>class ___*___ {
+</string>
+							<key>End</key>
+							<string>
+}
+</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+						<key>*:implementation:methods:init</key>
+						<dict>
+							<key>Beginning</key>
+							<string>override init() {
+	super.init()
+</string>
+							<key>End</key>
+							<string>}
+
+</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+						<key>*:implementation:methods:*</key>
+						<dict>
+							<key>Beginning</key>
+							<string>___*___ {</string>
+							<key>End</key>
+							<string>}
+
+</string>
+							<key>Indent</key>
+							<integer>1</integer>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+    <!-- Definitions that are language-sepcific, but turn out to be the same for Obj-C and Swift -->
+	<key>Definitions</key>
+	<dict>
+		<key>*:implementation:methods</key>
+		<dict>
+			<key>Beginning</key>
+			<string></string>
+			<key>End</key>
+			<string></string>
+		</dict>
+		<key>*:implementation:methods:*</key>
+		<dict>
+			<key>Beginning</key>
+			<string>___*___ {</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>*:implementation:properties</key>
+		<dict>
+			<key>Beginning</key>
+			<string></string>
+			<key>End</key>
+			<string>
+
+</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
