@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.antitypical.dt.unit.base</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.base</string>
+	</array>
+	<key>Project</key>
+	<dict>
+		<key>SharedSettings</key>
+		<dict>
+			<key>GCC_C_LANGUAGE_STANDARD</key>
+			<string>gnu99</string>
+			<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+			<string>gnu++0x</string>
+			<key>CLANG_CXX_LIBRARY</key>
+			<string>libc++</string>
+			<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+			<string>YES_ERROR</string>
+			<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+			<string>YES_AGGRESSIVE</string>
+			<key>CLANG_WARN_UNREACHABLE_CODE</key>
+			<string>YES</string>
+			<key>GCC_WARN_UNUSED_VARIABLE</key>
+			<string>YES</string>
+			<key>GCC_WARN_UNUSED_FUNCTION</key>
+			<string>YES</string>
+			<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+			<string>YES</string>
+			<key>CLANG_WARN_EMPTY_BODY</key>
+			<string>YES</string>
+			<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_INT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_BOOL_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_ENUM_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+			<string>YES_ERROR</string>
+			<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+			<string>YES</string>
+			<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+			<string>YES</string>
+			<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+			<string>YES_ERROR</string>
+			<key>CLANG_ENABLE_OBJC_ARC</key>
+			<string>YES</string>
+			<key>CLANG_ENABLE_MODULES</key>
+			<string>YES</string>
+			<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+			<string>YES</string>
+			<key>ALWAYS_SEARCH_USER_PATHS</key>
+			<string>NO</string>
+		</dict>
+		<key>Configurations</key>
+		<dict>
+			<key>Debug</key>
+			<dict>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<string>DEBUG=1 $(inherited)</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+                
+                <!-- !!!:mferris:20140322 Is it really appropriate for these to be different for Debug 
+                 -->
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+			</dict>
+			<key>Release</key>
+			<dict>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+			</dict>
+		</dict>
+	</dict>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>Name</key>
+			<string>___PACKAGENAME___</string>
+			<key>SharedSettings</key>
+			<dict>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+			</dict>
+			<key>Configurations</key>
+			<dict>
+				<key>Debug</key>
+				<dict/>
+				<key>Release</key>
+				<dict/>
+			</dict>
+		</dict>
+	</array>
+	<key>Definitions</key>
+	<dict>
+        <!-- Definitions that are needed by some things that don't want languageChoice, but need some ObjC stuff -->
+		<key>*:comments</key>
+		<string>//___COPYRIGHT___
+</string>
+		<key>*:imports</key>
+		<dict>
+			<key>Beginning</key>
+			<string></string>
+			<key>End</key>
+			<string>
+</string>
+		</dict>
+		<key>*:imports:importHeader:*</key>
+		<string>#import &quot;___*___&quot;</string>
+		<key>*:imports:importFramework:*</key>
+		<string>@import ___*___;</string>
+		<key>*:class:*</key>
+		<string>@class ___*___;
+</string>
+		<key>*:interface</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@interface ___*___
+</string>
+			<key>End</key>
+			<string>@end
+</string>
+		</dict>
+		<key>*:extension</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@interface ___FILEBASENAME___ ()
+</string>
+			<key>End</key>
+			<string>@end
+</string>
+		</dict>
+		<key>*:implementation</key>
+		<dict>
+			<key>Beginning</key>
+			<string>@implementation ___FILEBASENAME___
+</string>
+			<key>End</key>
+			<string>@end</string>
+		</dict>
+		<key>*:implementation:synthesize</key>
+		<dict>
+			<key>End</key>
+			<string>
+</string>
+		</dict>
+		<key>*:implementation:synthesize:*</key>
+		<string>@synthesize ___*___;</string>
+		<key>*:implementation:methods:init</key>
+		<dict>
+			<key>Beginning</key>
+			<string>- (instancetype)init {
+	self = [super init];
+	if (self) {</string>
+			<key>End</key>
+			<string>	}
+	return self;
+}
+</string>
+			<key>Indent</key>
+			<integer>2</integer>
+		</dict>
+		<key>*:implementation:methods:*</key>
+		<dict>
+			<key>Beginning</key>
+			<string>___*___ {</string>
+			<key>End</key>
+			<string>}
+</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>Prefix.pch</key>
+		<dict>
+			<key>Group</key>
+			<string>Supporting Files</string>
+			<key>TargetIndices</key>
+			<array/>
+		</dict>
+		<key>Prefix.pch:objC</key>
+		<dict>
+			<key>Beginning</key>
+			<string>#ifdef __OBJC__</string>
+			<key>End</key>
+			<string>#endif</string>
+			<key>Indent</key>
+			<integer>1</integer>
+		</dict>
+		<key>Prefix.pch:objC:importFoundation</key>
+		<string>@import Foundation;</string>
+	</dict>
+</dict>
+</plist>
