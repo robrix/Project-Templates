@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.antitypical.dt.unit.osxUnitTestBundleBase</string>
+	<key>Ancestors</key>
+	<array>
+		<string>com.apple.dt.unit.unitTestBundleBase</string>
+		<string>com.antitypical.dt.unit.languageChoice</string>
+		<string>com.apple.dt.unit.osxBase</string>
+	</array>
+	<key>TargetOnly</key>
+	<true/>
+	<key>Targets</key>
+	<array>
+		<dict>
+			<key>SharedSettings</key>
+			<dict>
+				<key>COMBINE_HIDPI_IMAGES</key>
+				<string>YES</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(DEVELOPER_FRAMEWORKS_DIR) $(inherited)</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks</string>
+			</dict>
+		</dict>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>languageChoice</string>
+			<key>Units</key>
+			<dict>
+				<key>Swift</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>___PACKAGENAMEASIDENTIFIER___.swift</key>
+						<dict>
+							<key>Path</key>
+							<string>___PACKAGENAMEASIDENTIFIER___.swift</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
