@@ -2,4 +2,4 @@
 
 import XCTest
 
-class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {}
+final class ___FILEBASENAMEASIDENTIFIER___: XCTestCase {}
