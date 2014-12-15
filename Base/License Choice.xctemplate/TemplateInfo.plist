@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Kind</key>
+	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
+	<key>Identifier</key>
+	<string>com.antitypical.dt.unit.licenseChoice</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>licenseChoice</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Add LICENSE</string>
+			<key>Description</key>
+			<string>Whether to add an MIT LICENSE file</string>
+			<key>Type</key>
+			<string>checkbox</string>
+			<key>Default</key>
+			<string>true</string>
+			<key>Units</key>
+			<dict>
+				<key>true</key>
+				<dict>
+					<key>Nodes</key>
+					<array>
+						<string>../LICENSE</string>
+					</array>
+					<key>Definitions</key>
+					<dict>
+						<key>../LICENSE</key>
+						<dict>
+							<key>TargetIndices</key>
+							<array/>
+							<key>Path</key>
+							<string>LICENSE</string>
+						</dict>
+					</dict>
+				</dict>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
