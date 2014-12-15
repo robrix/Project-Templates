@@ -10,8 +10,8 @@
 	<array>
 		<string>com.antitypical.dt.unit.frameworkBase</string>
 		<string>com.antitypical.dt.unit.languageChoice</string>
-		<string>com.antitypical.dt.unit.licenseChoice</string>
 		<string>com.antitypical.dt.unit.gitignore</string>
+		<string>com.antitypical.dt.unit.licenseChoice</string>
 		<string>com.apple.dt.unit.osxBase</string>
 	</array>
 	<key>Concrete</key>
