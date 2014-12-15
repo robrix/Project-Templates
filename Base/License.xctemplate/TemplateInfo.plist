@@ -5,12 +5,12 @@
 	<key>Kind</key>
 	<string>Xcode.Xcode3.ProjectTemplateUnitKind</string>
 	<key>Identifier</key>
-	<string>com.antitypical.dt.unit.licenseChoice</string>
+	<string>com.antitypical.dt.unit.license</string>
 	<key>Options</key>
 	<array>
 		<dict>
 			<key>Identifier</key>
-			<string>licenseChoice</string>
+			<string>license</string>
 			<key>Required</key>
 			<true/>
 			<key>Name</key>
