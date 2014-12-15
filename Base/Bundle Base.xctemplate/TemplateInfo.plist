@@ -75,7 +75,7 @@
 </string>
 		<key>Info.plist:Versioning</key>
 		<string>&lt;key&gt;CFBundleShortVersionString&lt;/key&gt;
-&lt;string&gt;1.0&lt;/string&gt;
+&lt;string&gt;0.0.1&lt;/string&gt;
 &lt;key&gt;CFBundleVersion&lt;/key&gt;
 &lt;string&gt;1&lt;/string&gt;
 </string>
