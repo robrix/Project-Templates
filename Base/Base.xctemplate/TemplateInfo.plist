@@ -169,9 +169,8 @@
 		<key>*:implementation:methods:init</key>
 		<dict>
 			<key>Beginning</key>
-			<string>- (instancetype)init {
-	self = [super init];
-	if (self) {</string>
+			<string>-(instancetype)init {
+	if ((self = [super init])) {</string>
 			<key>End</key>
 			<string>	}
 	return self;
